@@ -65,20 +65,17 @@ h1{
 /*Style the images*/
 
 
-/*Make the h2 heading match h1*/
 h2{
 	font-size: 2em; 
 	font-weight: bold;
+	font-family: 'Noto Sans', sans-serif;
 }
 
-/*Improve the spacing for paragraphs AND headings*/
 p, h1, h2 {
     padding: 10px;
 }
 
-/*Add borders around the main components and some
-space too*/
-header, footer{
+header{
 	border: 4px solid #000000;
 	margin: 10px 0;
 }
@@ -87,9 +84,6 @@ nav, main, h1, {
 	margin: 10px 0;
 }
 
-
-/*Change the styling for all of the list 
-items in the nav section*/
 nav li{
 	padding:10px;
 	width:25%;
@@ -150,6 +144,77 @@ nav li{
   	margin-right: auto;
 	width: 50%;
 	height: auto;
+
+}
+.skip a{
+	background: white;
+	left: 0;
+	padding: 7px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -50px;
+  }
+  .skip a:focus{
+	position: absolute;
+	top: 10px;
+  }
+
+@media all and (min-width: 880px){
+
+	.profile{
+		width: 30%;
+		position: absolute;
+		left: 40px;
+	}
+	#info{
+		display: inline;
+		position: absolute;
+		margin-left: 500px;
+		margin-top: 200px;
+		font-size: 30px;
+		text-align: justify;
+		font-family: 'Noto Sans', sans-serif;
+		font-weight: normal;
+	}
+	footer{
+		position: fixed;
+		bottom: 20px;
+		width: 90%;
+		height: 40px;
+		padding-top: 30px;
+		text-align: center;
+	}
+	.nav_links{
+		justify-content: flex-end;
+	}
+	.container p{
+		font-size: 30px;
+		text-align: center;
+		font-family: 'Noto Sans', sans-serif;
+
+	}
+
+	.florida img, .ny img, .michigan img {
+		width: 35%;
+		height: 35%;
+		margin-left: auto;
+		margin-right: auto;
+		object-fit: cover;
+	}
+	.florida p, .ny p, .michigan p{
+		display: block;
+		text-align: left;
+	}
+	
+	.italy, .mexico, .maldives, .switzerland, .australia{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+
+}
+	  
 
 }
 
